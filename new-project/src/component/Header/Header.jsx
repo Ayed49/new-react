@@ -23,9 +23,9 @@ const Header = () => {
         </div>
       </div>
       <div className="flex bg-gray-400 rounded-md ml-20 mr-20 mt-5">
-        <div>
-            <h1 className="text-6xl">Books to freshen up your bookshelf</h1>
-            <button className="bg-green-900 text-white p-3 rounded-md">View The List</button>
+        <div className="m-20 ">
+            <h1 className="text-6xl">Books to freshen up <br /> your bookshelf</h1>
+            <button className="bg-green-900 text-white mt-10 p-3 rounded-md">View The List</button>
         </div>
         <img src="https://i.ibb.co.com/7r7Mjs9/pngwing-1.png" alt="" />
       </div>

@@ -11,7 +11,12 @@ import Root from './component/Root/Root';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root></Root>
+    element: <Root></Root>,
+    children: [
+      {
+        path: "/"
+      }
+    ]
   },
 ]);
 createRoot(document.getElementById('root')).render(

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Header = () => {
   return (
     <div>
@@ -6,11 +8,10 @@ const Header = () => {
           <h1 className="font-extrabold text-3xl">Book Vibe</h1>
         </div>
         <div>
-          <ul className="flex">
-            <li className="font-medium mr-4 p-2">Home</li>
-            <li className="font-medium mr-4 p-2">Listed Books</li>
-            <li className="font-medium mr-4 p-2">Pages to Read</li>
-          </ul>
+          <Link className="font-medium mr-4 p-2" to="/home">Home</Link>
+          <Link className="font-medium mr-4 p-2" to="/books">Listed Books</Link>
+          <Link className="font-medium mr-4 p-2" to="/pages">Pages to Read</Link>
+          
         </div>
 
         <div>
@@ -27,7 +28,10 @@ const Header = () => {
             <h1 className="text-6xl">Books to freshen up <br /> your bookshelf</h1>
             <button className="bg-green-900 text-white mt-10 p-3 rounded-md">View The List</button>
         </div>
+        
         <img src="https://i.ibb.co.com/7r7Mjs9/pngwing-1.png" alt="" />
+        
+        
       </div>
     </div>
   );
